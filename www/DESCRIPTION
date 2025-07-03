@@ -1,0 +1,40 @@
+Package: Text2Surv
+Type: Shiny Application
+Title: Text2Surv ICB UMA
+Version: 1.0.0
+Authors@R: c(
+    person("José M.", "Jerez", role = "cre",
+        email = "jmjerez@uma.es"),
+    person("Francisco J.", "Moreno-Barea", role = c("aut", "cre"),
+        email = "fjmoreno@lcc.uma.es"),
+    person("Alejandro", "Pascual", role = c("aut", "cre"),
+        email = "ale.pas.mel@uma.es"),
+    person("Pablo", "Rodriguez-Brazzarola", role = "aut"),
+    person("Héctor", "Mesa", role = "aut"))
+
+License: GPL-3
+Depends:
+    R (>= 3.1.0),
+    markdown,
+    shiny
+Imports:
+    colorspace,
+    DT,
+    GGally,
+    gpairs,
+    plotly,
+    readtext,
+    readxl,
+    RJSONIO,
+    sas7bdat,
+    shinyalert,
+    shinycssloaders,
+    shinydashboard,
+    shinyjs,
+    shinyWidgets,
+    survey,
+    surveyspec,
+    tibble,
+    viridis
+
+RoxygenNote: 6.0.1

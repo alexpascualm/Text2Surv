@@ -1,0 +1,184 @@
+/* BG -> F5F7FA */
+body, .content-wrapper {
+  background-color: #F5F7FA;
+}
+
+hr {
+  border-top: 1px solid #000000;
+}
+
+.shiny-split-layout > div {
+  overflow: visible;
+}
+/* 
+button .modalBttn { 
+  vertical-align: middle; 
+  height: 50px;font-size: 30px;
+  width: 85%; 
+  
+}
+*/
+.dt-buttons {
+  margin-top: 7px;
+}
+
+h6 {
+  /* 
+  font-size: 13px;
+  */
+  text-align: center; 
+  font-weight: bold;
+}
+
+/* Plot Titles */
+h3 {
+  font-weight: bold;
+  text-align: center; 
+}
+
+/* Sidebar Picker Input value */
+.sidebar a {
+  color: black !important;
+}
+
+
+/* Dashboard Sidebar */
+#sidebarCollapsed {
+  background-color: #F5F7FA;
+  padding-top: 0;
+}
+
+/* Dashboard Sidebar - Labels */
+#sidebarItemExpanded > ul > div > label {
+  /* font-weight: bold; */
+  font-size: 15px;
+  color: black;
+}
+
+/* Dashboard Sidebar - Menu Item Name */
+#sidebarItemExpanded > ul > li > a {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  background: #E5E6E1;
+  border-left-color: #3c8dbc;
+}
+
+/* Dashboard Sidebar - Menu Item Expanded  */
+#sidebarItemExpanded > ul > li > ul {
+    background: #FAFAF9;
+    border-bottom-color: black;
+}
+
+/* Dashboard Sidebar - Submenu Item Label */
+#sidebarItemExpanded > ul > li > ul > div > label {
+  font-size: 14px;
+  color: black;
+}
+
+/* Dashboard Sidebar - Submenu Item Span */
+#sidebarItemExpanded > ul > li > ul > div > div > span {
+  font-size: 14px;
+  color: black;
+}
+
+#sidebarItemExpanded > ul > div > div > label {
+  font-size: 14px;
+  color: black;
+}
+
+#sidebarItemExpanded > ul > div > div > div > label {
+  font-size: 14px;
+  color: black;
+}
+
+#sidebarItemExpanded > ul > div > div > div > div > label {
+  font-size: 14px;
+  color: black;
+}
+
+#sidebarItemExpanded > ul > div> div > div > div > div > span {
+  font-size: 14px;
+  color: black;
+}
+
+#sidebarItemExpanded > ul > div > div > div > div > span {
+  font-size: 14px;
+  color: black;
+}
+
+.modal-lg {
+  width: 70%;
+}
+
+
+/*
+#sidebarItemExpanded > ul > li > ul {
+  
+}
+  /* 
+.options-button {
+  align-self: center;
+}
+  */
+/* header title font
+.main-header .logo {
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+*/
+
+/* background color of header (logo part) 
+.skin-blue .main-header .logo {
+  background-color: #222b2e;
+}
+*/
+
+/* change the background color of header (logo part) when mouse hover 
+.skin-blue .main-header .logo:hover {
+  background-color: orange;
+}
+*/
+
+/* background color for remaining part of the header
+.skin-blue .main-header .navbar {
+  background-color: #67818a;
+}
+*/
+                              
+/* main sidebar
+.skin-blue .main-sidebar {
+  background-color: #E5E6E1;
+  font-weight: bold;
+  font-size: 12px;
+}
+ */
+
+
+/* active sidebar menu item
+.skin-blue .main-sidebar .sidebar .sidebar-menu .active a{
+  background-color: white;
+  color:black;
+}
+*/
+
+/* sidebar menuitems
+.skin-blue .main-sidebar .sidebar .sidebar-menu a{
+  background-color: orange;
+  color: black;
+}
+*/
+
+/* sidebar menuitems when mouse hover
+.skin-blue .main-sidebar .sidebar .sidebar-menu a:hover{
+  background-color: brown;
+  color:white;
+}
+*/
+                              
+/* sidebar toggle button           
+.skin-blue .main-header .navbar .sidebar-toggle:hover{
+  background-color: black;
+}
+*/
