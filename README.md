@@ -1,51 +1,75 @@
 # Text2Surv
+---
 
-## Guia instalación python con entorno anaconda
+## 📋 Descripción general
 
-### Descargar e instalar anaconda
+Este proyecto nace del Trabajo de Fin de Grado “Clasificación de Neoplasias mediante procesamiento de textos para el estudio de supervivencia poblacional” (Alejandro Pascual Mellado, Universidad de Málaga, junio 2024).  
+Su objetivo principal es:
+1. Proporcionar una aplicación web para carga masiva de datos (hojas de cálculo y PDFs), extracción de información automática, gestión, visualización y análisis estadístico (curvas de supervivencia de Kaplan–Meier, estadísticas descriptivas, filtros, gráficas) en un entorno clínico local.
+2. Extraer la localización de neoplasias (CIE‑10‑ES) de historias clínicas electrónicas (HCE) en español, usando modelos de NLP.
+3. Facilitar la labor administrativa de los servicios de oncológia favoreciendo la transformación digital hospitalaria.
+---
 
-	- En Windows: https://docs.anaconda.com/free/anaconda/install/windows/
+## ⚙️ Instalación de la aplicación
 
-	- En macOS: https://docs.anaconda.com/free/anaconda/install/mac-os/
+La aplicación corre completamente en local, sin conexiones externas, garantizando la privacidad de los datos clínicos.
 
-### Crear entorno anaconda con Python 
+### 1. Prerrequisitos
+   - R (≥ 4.0)  
+   - RStudio Desktop  
+   - Anaconda (Python 3.9)
 
-	- Abrir anaconda prompt (Windows)
+### 2. Crear y preparar entorno Python
 
-	- Abrir cmd (macOs)
+   Desde Anaconda Prompt (Windows) o Terminal (macOS/Linux):
 
-	- Navegar hasta el directorio principal de la app (Text2Surv)
+	   conda create --prefix .venv python=3.9  
+	   conda activate ./.venv  
+	   conda install numpy pandas regex scikit-learn gensim  
 
-	- conda create --prefix=.venv python=3.9
+   Instalar librerías del proyecto (orden crítico):
+   
+	   cd modules/fragments && pip install -e .  
+	   cd ../tools     && pip install -e .  
+	   cd ../brat      && pip install -e .  
+	   cd ../tokens    && pip install -e .  
+	   cd ../corpus    && pip install -e .  
+	   cd ../tnm       && pip install -e .
+
+### 3. Instalar dependencias R
+
+   Abre RStudio, fija tu directorio de trabajo en la raíz del proyecto e instala las dependencias cargadas en app.R:
+
+### 4. Ejecutar la aplicación
+
+   En RStudio, abre app.R y pulsa Run App.  
+   
+---
+
+## 🚀 Uso principal
+
+1. Login: sistema de usuarios + SQLite.  
+2. Carga de datos:
+   - Hoja de cálculo: XLSX/CSV con columnas clave.  
+   - ZIP de PDFs: extracción automática con expresiones regulares.  
+3. Gestión de registros: visualización, edición y filtrado dinámico.  
+4. Análisis descriptivo: tablas y gráficas según tipo de campo (numérico, fecha, categórico).  
+5. Parámetros de gráfica: personaliza títulos y ejes.  
+6. Supervivencia: curvas de Kaplan–Meier (básico, estratificado, con cálculo de tiempo).  
+7. Inferencia AI: localización de neoplasias mediante modelos de procesamiento de lenguaje natural integrados para clasificar historiales clínicos electrónicos.
+
+---
+
+## 👩‍💻 Herramientas y tecnologías
+
+- RShiny para la interfaz web interactiva.  
+- reticulate para interoperabilidad R ↔️ Python.   
+- SQLite para el backend de usuarios y metadatos.  
+- Expresiones regulares para extraer datos de PDFs.
+- PLN para procesamiento y clasificación de textos
 
 
-### Preparar entorno anaconda
 
-	- conda activate "Path"\.venv
-
- 	- conda install numpy
-
- 	- conda install pandas
-
-	- Navegar al directorio donde se encuentre la carpeta con la libreria de galen a instalar (./fragments/ , ./tools/ etc) y ejecutar "pip install -e ." Se debe seguir el siguiente orden:
-
-		-- fragments
-
-		-- tools
-
-		-- brat
-
-		-- tokens
-
-		-- corpus
-
-		-- tnm
-
-	- conda install -c anaconda regex
-
-	- conda install gensim
-
-	- conda install scikit-learn
 
 
 	
